@@ -1,0 +1,2 @@
+include 'albedo-core', 'albedo-impl'
+rootProject.name = 'albedo-game-server'

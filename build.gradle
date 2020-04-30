@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group 'mestydone.github'
+version '0.1'
+
+allprojects {
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+project(":albedo-core") {
+    apply plugin: 'java'
+
+    dependencies {
+        testImplementation('org.junit.jupiter:junit-jupiter:5.6.2')
+    }
+}
+
+project(":albedo-impl") {
+    apply plugin: 'java'
+
+    dependencies {
+        testImplementation('org.junit.jupiter:junit-jupiter:5.6.2')
+    }
+}
+
+
